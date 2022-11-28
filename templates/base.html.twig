@@ -11,9 +11,12 @@
 
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
+            <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
         {% endblock %}
     </head>
     <body>
+        {% include 'shared/nav.html.twig' %}
         {% block body %}{% endblock %}
+        {% include 'shared/footer.html.twig' %}
     </body>
 </html>
