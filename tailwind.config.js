@@ -5,7 +5,7 @@ module.exports = {
       "./templates/**/*.{html,twig}"
   ],
   theme: {
-    extend: {},
+      extend: {},
   },
   plugins: [
       require("tailgrids/plugin"),
