@@ -10,5 +10,8 @@ module.exports = {
   plugins: [
       require("tailgrids/plugin"),
       require("daisyui"),
+      require("@tailwindcss/forms")({
+          strategy: 'base', // only generate global styles
+      }),
   ]
 }

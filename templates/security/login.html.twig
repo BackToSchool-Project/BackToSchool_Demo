@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Se connecter{% endblock %}
+
+{% block body %}
+    <h1>Se connecter</h1>
+
+    <div class="container mx-auto my-8">
+        {{ form_start(formView) }}
+        {{ form_errors(formView) }}
+
+        {% if error %}
+            <div class="">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+        {% endif %}
+
+        {{ form_row(formView.email) }}
+        {{ form_row(formView.password) }}
+
+        <button type="submit" class="btn">Log In</button>
+        <a href="{{ path('app_logout') }}" class="btn">Log Out</a>
+
+        {{ form_end(formView) }}
+    </div>
+
+{% endblock %}
