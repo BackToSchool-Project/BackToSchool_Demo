@@ -9,8 +9,13 @@
                 />
             </a>
             <div class="flex flex-col sm:flex-row items-center justify-end px-4">
-                {% include 'component/_button.html.twig' with {label: "s'inscrire"} %}
-                {% include 'component/_button.html.twig' with {label: "se connecter", link:"/"} %}
+                {% include 'component/_buttonLink.html.twig' with {
+                    label: "s'inscrire"
+                } %}
+                {% include 'component/_buttonLink.html.twig' with {
+                    label: "se connecter",
+                    link: path('app_login')
+                } %}
             </div>
         </div>
     </div>
