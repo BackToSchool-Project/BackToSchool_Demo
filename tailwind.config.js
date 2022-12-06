@@ -9,6 +9,6 @@ module.exports = {
   },
   plugins: [
       require("tailgrids/plugin"),
-      require("daisyui"),git
+      require("daisyui"),
   ]
 }
